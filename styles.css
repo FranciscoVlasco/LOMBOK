@@ -1,0 +1,363 @@
+:root {
+  --main-color: #414641;
+  --secondary-color: #4c514c;
+  --alt-color: #7a8a80;
+  --background-color: #f4f6f3;
+  --footer-color: #e1e6e0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+/* Utilidades */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Reem Kufi Fun", sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+/*S E C C I O N       D E L       H E A D E R*/
+h1 {
+  color: var(--main-color);
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* Sección hero (header / nav) */
+
+header {
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: 900px;
+  background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (max-width: 480px) {
+  header {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    background-position: center bottom;
+  }
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header p {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+/*l i n e a   s o m b r e a d a */
+.underline {
+  width: 7%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+
+/*M E N U   D E   E S C R I T O R I O   N A V - H E A D E R  */
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+
+@media (max-width: 480px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* M E N U   D E   T E L E F O N O   M O V I L   N A V - H E A D E R */
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+.nav-small {
+  font-size: 10px;
+}
+
+.nav-small a {
+  margin-left: 15px;
+}
+
+.btn {
+  border: 2px solid var(--secondary-color);
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* S E C C I O N    D E   A R T I C U L O S      T A R J E T A S*/
+main {
+  background-color: var(--background-color);
+  padding: 120px 0;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 480px) {
+  main {
+    background-color: var(--background-color);
+    padding: 40px 0;
+    padding-bottom: 120px;
+  }
+}
+
+
+ 
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  main div h2{
+    font-size: 30px;
+  }
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.article-image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.article-image img {
+  width: 180%;
+}
+
+.article-content {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  width: 60%;
+  margin: 40px auto 0 auto;
+}
+@media (max-width: 480px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: 40px auto 0 auto;
+  } 
+}
+/* S E C C I O N    D E   A B O U T */
+
+.about-section {
+  display: flex;
+}
+@media (max-width: 480px) {
+  .about-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.about-section > div {
+  width: 100%;
+}
+
+.about-image {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (max-width: 480px) {
+  .about-image{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-image-mobile{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/520bc04fe4b03863c7f8a659/1505965654689-F8EUX5I1PDVT66SJ0UU8/spiritual+gifts.jpg?format=2500w");
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+.about-content {
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .about-content{
+    margin-top: 40px;
+    padding: 50px 50px;
+    flex-direction: column;
+  }
+}
+
+/*F O O T E R */
+
+.bajo{
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bajo div h3{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.bajo div p{
+  display: flex;
+  justify-content: center;
+  
+}
+.bajo div div p{
+  width: 200px;
+  height: 50px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 120px;
+ }
+
+ .bajo div div{
+  display: flex;
+  justify-content: center;
+ }
+
+footer{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+ footer div{
+  width: 200px;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url("https://thumbs.dreamstime.com/b/facebook-instagram-whatsapp-youtube-icono-del-logo-de-los-medios-sociales-vector-negro-aislado-en-fondo-blanco-185522524.jpg");
+  background-size: contain;
+  margin-left: 20px;
+ }
+
+@media (max-width: 480px) {
+  footer div mobile{
+    display: flex;
+    background-image: url("https://thumbs.dreamstime.com/b/facebook-instagram-whatsapp-youtube-icono-del-logo-de-los-medios-sociales-vector-negro-aislado-en-fondo-blanco-185522524.jpg");
+ }
+}
+
+ footer nav{
+  display: flex;
+  margin: 5px;
+  width: 250px;
+  height: 50px;
+  padding: 5px;
+ }
+
+ footer nav a{
+  display: flex;
+  margin: 10px;
+  color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+ }
+
+ footer nav a:hover{
+  color: beige;
+  padding: 6px;
+  border-radius: 7px;
+  background-color: black;
+ }
